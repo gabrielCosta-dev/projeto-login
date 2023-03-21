@@ -1,1 +1,46 @@
 @charset "UTF-8";
+
+/* Typical device breakpoint
+    Mobile – 360 x 640; 375 x 667; 360 x 720.
+    Tablet – 768 x 1024.
+    iPhone – 375 x 812.
+    Laptop – 1366 x 768.
+    Desktop or high-resolution laptop – 1920 x 1080. */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html{
+        background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    }
+
+    section#login{
+        width: 80vw;
+    }
+
+    section#login > div#imagem{
+        float: left; width: 30%; height: 100%;
+        background-position: left bottom;
+    }
+
+    section#login > div#formulario{
+        float: right; width: 70%;
+    }
+}  
+
+@media screen and (min-width: 992px){
+    body, html{
+        background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    }
+    
+    section#login{
+        width: 950px;
+    }
+
+    section#login > div#imagem{
+        float: right; width: 40%; height: 100%;
+        background-position: right bottom;
+    }
+
+    section#login > div#formulario{
+        float: left; width: 60%;
+    }
+}
