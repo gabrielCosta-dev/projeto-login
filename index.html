@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/login.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -19,16 +21,29 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <!-- <form action="login.php" method="post">
-                    <label for="iusuario">Usuário:</label>
-                    <input type="email" name="usuario" id="iusuario" required>
+                <form action="login.php" method="post" autocomplete="on">
+                   <div class="campo">
+                        <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                        <input type="email" name="email" id="iemail" required placeholder="Seu e-mail" autocomplete="email">
+                        <label for="iemail">E-mail</label>
+                   </div>
 
-                    <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            vpn_key
+                        </span>
+                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" placeholder="Sua senha" autocomplete="current-password">
+                        <label for="isenha">Senha</label>
+                    </div>
 
                     <div>
-                        <input type="submit" value="Enviar">
-                    </div> -->
+                        <input type="submit" value="Entrar">
+                        <a href="#" target="_blank" rel="noopener noreferrer">Esqueci a senha <span class="material-symbols-outlined">
+                            mail
+                        </span></a>
+                    </div>
                 </form>
             </div>
         </section>
